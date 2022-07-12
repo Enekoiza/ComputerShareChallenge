@@ -1,0 +1,15 @@
+/Users/enekoiza/Library/Mobile Documents/com~apple~CloudDocs/ComputerShareProject/ComputerShareCodingChallenge/ComputerShareCodingChallenge/bin/Debug/net6.0/ComputerShareCodingChallenge
+/Users/enekoiza/Library/Mobile Documents/com~apple~CloudDocs/ComputerShareProject/ComputerShareCodingChallenge/ComputerShareCodingChallenge/bin/Debug/net6.0/ComputerShareCodingChallenge.deps.json
+/Users/enekoiza/Library/Mobile Documents/com~apple~CloudDocs/ComputerShareProject/ComputerShareCodingChallenge/ComputerShareCodingChallenge/bin/Debug/net6.0/ComputerShareCodingChallenge.runtimeconfig.json
+/Users/enekoiza/Library/Mobile Documents/com~apple~CloudDocs/ComputerShareProject/ComputerShareCodingChallenge/ComputerShareCodingChallenge/bin/Debug/net6.0/ComputerShareCodingChallenge.dll
+/Users/enekoiza/Library/Mobile Documents/com~apple~CloudDocs/ComputerShareProject/ComputerShareCodingChallenge/ComputerShareCodingChallenge/bin/Debug/net6.0/ComputerShareCodingChallenge.pdb
+/Users/enekoiza/Library/Mobile Documents/com~apple~CloudDocs/ComputerShareProject/ComputerShareCodingChallenge/ComputerShareCodingChallenge/obj/Debug/net6.0/ComputerShareCodingChallenge.csproj.AssemblyReference.cache
+/Users/enekoiza/Library/Mobile Documents/com~apple~CloudDocs/ComputerShareProject/ComputerShareCodingChallenge/ComputerShareCodingChallenge/obj/Debug/net6.0/ComputerShareCodingChallenge.GeneratedMSBuildEditorConfig.editorconfig
+/Users/enekoiza/Library/Mobile Documents/com~apple~CloudDocs/ComputerShareProject/ComputerShareCodingChallenge/ComputerShareCodingChallenge/obj/Debug/net6.0/ComputerShareCodingChallenge.AssemblyInfoInputs.cache
+/Users/enekoiza/Library/Mobile Documents/com~apple~CloudDocs/ComputerShareProject/ComputerShareCodingChallenge/ComputerShareCodingChallenge/obj/Debug/net6.0/ComputerShareCodingChallenge.AssemblyInfo.cs
+/Users/enekoiza/Library/Mobile Documents/com~apple~CloudDocs/ComputerShareProject/ComputerShareCodingChallenge/ComputerShareCodingChallenge/obj/Debug/net6.0/ComputerShareCodingChallenge.csproj.CoreCompileInputs.cache
+/Users/enekoiza/Library/Mobile Documents/com~apple~CloudDocs/ComputerShareProject/ComputerShareCodingChallenge/ComputerShareCodingChallenge/obj/Debug/net6.0/ComputerShareCodingChallenge.dll
+/Users/enekoiza/Library/Mobile Documents/com~apple~CloudDocs/ComputerShareProject/ComputerShareCodingChallenge/ComputerShareCodingChallenge/obj/Debug/net6.0/refint/ComputerShareCodingChallenge.dll
+/Users/enekoiza/Library/Mobile Documents/com~apple~CloudDocs/ComputerShareProject/ComputerShareCodingChallenge/ComputerShareCodingChallenge/obj/Debug/net6.0/ComputerShareCodingChallenge.pdb
+/Users/enekoiza/Library/Mobile Documents/com~apple~CloudDocs/ComputerShareProject/ComputerShareCodingChallenge/ComputerShareCodingChallenge/obj/Debug/net6.0/ComputerShareCodingChallenge.genruntimeconfig.cache
+/Users/enekoiza/Library/Mobile Documents/com~apple~CloudDocs/ComputerShareProject/ComputerShareCodingChallenge/ComputerShareCodingChallenge/obj/Debug/net6.0/ref/ComputerShareCodingChallenge.dll
