@@ -6,6 +6,7 @@ namespace ComputerShareCodingChallenge
 	{
 		public CoderDecoderController()
 		{
+			//Loop to ask the user the action to perform
             while (true)
             {
 				Console.WriteLine("Please choose to code by typing 'C' or decode by typing 'D'. 'E' for exiting the program.");
@@ -19,16 +20,13 @@ namespace ComputerShareCodingChallenge
 
             }
 
-			Node newNode = new Node();
-			newNode.NodeValue = 'a';
-			string line = "";
-			using (var reader = new System.IO.StreamReader("../../../MorseDictionary.txt"))
-			{
-				while ((line = reader.ReadLine()) != null)
-				{
+			BinaryTree myTree = new BinaryTree();
 
-				}
-			}
+			string pathToDictionaryFile = Directory.GetCurrentDirectory() + "/MorseDictionary.txt";
+
+			myTree.createTree(pathToDictionaryFile);
+
+
 		}
 	}
 }
