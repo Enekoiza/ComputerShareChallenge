@@ -20,6 +20,17 @@ namespace ComputerShareCodingChallenge
 			set { nodeValue = value; }
         }
 
-	}
+		public Node LeftNode
+        {
+			get { return leftNode; }
+			set { leftNode = value; }
+        }
+
+        public Node RightNode
+        {
+            get { return rightNode; }
+            set { rightNode = value; }
+        }
+    }
 }
 
