@@ -26,7 +26,9 @@ namespace ComputerShareCodingChallenge
 
 			myTree.createTree(pathToDictionaryFile);
 
+			Node rootNode = new Node();
 
+			myTree.decode(myTree.Root, ".... --- .-.. .-");
 		}
 	}
 }

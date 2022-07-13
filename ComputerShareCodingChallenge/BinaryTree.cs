@@ -61,6 +61,32 @@ namespace ComputerShareCodingChallenge
             }
         }
 
+        public string decode(Node rootNode, string codedMessage)
+        {
+            string result = "";
+
+            Node temp = new Node();
+
+
+            List<string> morsePattern = codedMessage.Split(" ").ToList<string>();
+
+            foreach (string letter in morsePattern)
+            {
+                temp = rootNode;
+
+                foreach (char sign in letter)
+                {
+                    if (sign == '.') temp = temp.LeftNode;
+                    if (sign == '-') temp = temp.RightNode;
+                }
+                result = result + temp.NodeValue;
+            }
+
+            
+
+            return result;
+        }
+
 
 	}
 }
