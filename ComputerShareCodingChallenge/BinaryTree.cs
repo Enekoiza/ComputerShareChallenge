@@ -91,7 +91,21 @@ namespace ComputerShareCodingChallenge
         {
             List<string> result = new List<string>();
 
-            bool a = trasverseTree(rootNode, result, 'Z');
+            string finalEncodedMessage = string.Empty;
+
+            foreach (var letter in codedMessage)
+            {
+                result.Clear();
+                if (letter == ' ') 
+                {
+                    finalEncodedMessage += "/";
+                    continue;
+                }
+                
+                trasverseTree(rootNode, result, letter);
+                string encodedLetter = string.Join("", result);
+                finalEncodedMessage += encodedLetter;
+            }
 
 
             return "";
@@ -105,12 +119,12 @@ namespace ComputerShareCodingChallenge
             {
                 if (trasverseTree(rootNode.LeftNode, finalMorseString, letter) == true)
                 {
-                    finalMorseString.Add(".");
+                    finalMorseString.Insert(0, ".");
                     return true;
                 }
                 else if (trasverseTree(rootNode.RightNode, finalMorseString, letter) == true)
                 {
-                    finalMorseString.Add("-");
+                    finalMorseString.Insert(0, "-");
                     return true;
                 }
             }

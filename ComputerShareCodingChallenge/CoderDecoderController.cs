@@ -37,7 +37,7 @@ namespace ComputerShareCodingChallenge
 				}
 				if(input == "C")
                 {
-					myTree.encode(myTree.Root, "ASD");
+					myTree.encode(myTree.Root, "HOLA");
                 }
 
 
