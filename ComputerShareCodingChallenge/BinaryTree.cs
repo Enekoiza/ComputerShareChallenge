@@ -63,7 +63,7 @@ namespace ComputerShareCodingChallenge
 
         public string decode(Node rootNode, string codedMessage)
         {
-            string result = "";
+            string result = string.Empty;
 
             Node temp = new Node();
 
@@ -87,7 +87,40 @@ namespace ComputerShareCodingChallenge
             return result;
         }
 
+        public string encode(Node rootNode, string codedMessage)
+        {
+            List<string> result = new List<string>();
 
-	}
+            bool a = trasverseTree(rootNode, result, 'Z');
+
+
+            return "";
+        }
+        
+        public bool trasverseTree(Node rootNode, List<string> finalMorseString, char letter)
+        {
+            if (rootNode == null) return false;
+            else if (rootNode.NodeValue == letter) return true;
+            else
+            {
+                if (trasverseTree(rootNode.LeftNode, finalMorseString, letter) == true)
+                {
+                    finalMorseString.Add(".");
+                    return true;
+                }
+                else if (trasverseTree(rootNode.RightNode, finalMorseString, letter) == true)
+                {
+                    finalMorseString.Add("-");
+                    return true;
+                }
+            }
+
+
+            return false;
+
+        }
+
+
+    }
 }
 

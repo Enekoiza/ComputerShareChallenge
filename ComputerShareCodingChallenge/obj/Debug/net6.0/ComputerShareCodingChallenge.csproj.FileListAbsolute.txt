@@ -13,3 +13,18 @@
 /Users/enekoiza/Library/Mobile Documents/com~apple~CloudDocs/ComputerShareProject/ComputerShareCodingChallenge/ComputerShareCodingChallenge/obj/Debug/net6.0/ComputerShareCodingChallenge.pdb
 /Users/enekoiza/Library/Mobile Documents/com~apple~CloudDocs/ComputerShareProject/ComputerShareCodingChallenge/ComputerShareCodingChallenge/obj/Debug/net6.0/ComputerShareCodingChallenge.genruntimeconfig.cache
 /Users/enekoiza/Library/Mobile Documents/com~apple~CloudDocs/ComputerShareProject/ComputerShareCodingChallenge/ComputerShareCodingChallenge/obj/Debug/net6.0/ref/ComputerShareCodingChallenge.dll
+C:\Users\Eneko\Source\Repos\Enekoiza\ComputerShareChallenge\ComputerShareCodingChallenge\bin\Debug\net6.0\ComputerShareCodingChallenge.exe
+C:\Users\Eneko\Source\Repos\Enekoiza\ComputerShareChallenge\ComputerShareCodingChallenge\bin\Debug\net6.0\ComputerShareCodingChallenge.deps.json
+C:\Users\Eneko\Source\Repos\Enekoiza\ComputerShareChallenge\ComputerShareCodingChallenge\bin\Debug\net6.0\ComputerShareCodingChallenge.runtimeconfig.json
+C:\Users\Eneko\Source\Repos\Enekoiza\ComputerShareChallenge\ComputerShareCodingChallenge\bin\Debug\net6.0\ComputerShareCodingChallenge.dll
+C:\Users\Eneko\Source\Repos\Enekoiza\ComputerShareChallenge\ComputerShareCodingChallenge\bin\Debug\net6.0\ComputerShareCodingChallenge.pdb
+C:\Users\Eneko\Source\Repos\Enekoiza\ComputerShareChallenge\ComputerShareCodingChallenge\obj\Debug\net6.0\ComputerShareCodingChallenge.csproj.AssemblyReference.cache
+C:\Users\Eneko\Source\Repos\Enekoiza\ComputerShareChallenge\ComputerShareCodingChallenge\obj\Debug\net6.0\ComputerShareCodingChallenge.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eneko\Source\Repos\Enekoiza\ComputerShareChallenge\ComputerShareCodingChallenge\obj\Debug\net6.0\ComputerShareCodingChallenge.AssemblyInfoInputs.cache
+C:\Users\Eneko\Source\Repos\Enekoiza\ComputerShareChallenge\ComputerShareCodingChallenge\obj\Debug\net6.0\ComputerShareCodingChallenge.AssemblyInfo.cs
+C:\Users\Eneko\Source\Repos\Enekoiza\ComputerShareChallenge\ComputerShareCodingChallenge\obj\Debug\net6.0\ComputerShareCodingChallenge.csproj.CoreCompileInputs.cache
+C:\Users\Eneko\Source\Repos\Enekoiza\ComputerShareChallenge\ComputerShareCodingChallenge\obj\Debug\net6.0\ComputerShareCodingChallenge.dll
+C:\Users\Eneko\Source\Repos\Enekoiza\ComputerShareChallenge\ComputerShareCodingChallenge\obj\Debug\net6.0\refint\ComputerShareCodingChallenge.dll
+C:\Users\Eneko\Source\Repos\Enekoiza\ComputerShareChallenge\ComputerShareCodingChallenge\obj\Debug\net6.0\ComputerShareCodingChallenge.pdb
+C:\Users\Eneko\Source\Repos\Enekoiza\ComputerShareChallenge\ComputerShareCodingChallenge\obj\Debug\net6.0\ComputerShareCodingChallenge.genruntimeconfig.cache
+C:\Users\Eneko\Source\Repos\Enekoiza\ComputerShareChallenge\ComputerShareCodingChallenge\obj\Debug\net6.0\ref\ComputerShareCodingChallenge.dll
