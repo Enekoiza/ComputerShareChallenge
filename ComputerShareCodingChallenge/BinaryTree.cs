@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+
 namespace ComputerShareCodingChallenge
 {
 	public class BinaryTree
@@ -93,22 +95,23 @@ namespace ComputerShareCodingChallenge
 
             string finalEncodedMessage = string.Empty;
 
-            foreach (var letter in codedMessage)
+            foreach (var letter in codedMessage.Select((value, index) => new {value, index}))
             {
                 result.Clear();
-                if (letter == ' ') 
+                if (letter.value == ' ') 
                 {
                     finalEncodedMessage += "/";
                     continue;
                 }
+                if (letter.index != 0 && !finalEncodedMessage.EndsWith("/")) finalEncodedMessage += " ";
                 
-                trasverseTree(rootNode, result, letter);
+                trasverseTree(rootNode, result, letter.value);
                 string encodedLetter = string.Join("", result);
                 finalEncodedMessage += encodedLetter;
             }
 
 
-            return "";
+            return finalEncodedMessage;
         }
         
         public bool trasverseTree(Node rootNode, List<string> finalMorseString, char letter)

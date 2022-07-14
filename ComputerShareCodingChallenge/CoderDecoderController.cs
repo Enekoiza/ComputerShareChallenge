@@ -25,11 +25,15 @@ namespace ComputerShareCodingChallenge
 
 				Node rootNode = new Node();
 
+				rootNode = myTree.Root;
+
+				string message = string.Empty;
+
 				if (input == "D")
                 {
 					Console.WriteLine("Enter a message to decode: ");
 
-					string message = Console.ReadLine();
+					message = Console.ReadLine();
 
 					
 					Console.WriteLine($"The decoded message is: {myTree.decode(rootNode, message)}");
@@ -37,8 +41,13 @@ namespace ComputerShareCodingChallenge
 				}
 				if(input == "C")
                 {
-					myTree.encode(myTree.Root, "HOLA");
-                }
+					Console.WriteLine("Enter a message to decode: ");
+
+					message = Console.ReadLine();
+
+					Console.WriteLine($"The decoded message is: {myTree.encode(rootNode, message)}");
+
+				}
 
 
 			}
