@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Eneko\\Source\\Repos\\Enekoiza\\ComputerShareChallenge\\ComputerShareCodingChallenge\\ComputerShareCodingChallenge.csproj": {}
+    "C:\\Users\\Eneko\\source\\repos\\Enekoiza\\ComputerShareChallenge\\ComputerShareCodingChallenge\\ComputerShareCodingChallenge.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Eneko\\Source\\Repos\\Enekoiza\\ComputerShareChallenge\\ComputerShareCodingChallenge\\ComputerShareCodingChallenge.csproj": {
+    "C:\\Users\\Eneko\\source\\repos\\Enekoiza\\ComputerShareChallenge\\ComputerShareCodingChallenge\\ComputerShareCodingChallenge.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Eneko\\Source\\Repos\\Enekoiza\\ComputerShareChallenge\\ComputerShareCodingChallenge\\ComputerShareCodingChallenge.csproj",
+        "projectUniqueName": "C:\\Users\\Eneko\\source\\repos\\Enekoiza\\ComputerShareChallenge\\ComputerShareCodingChallenge\\ComputerShareCodingChallenge.csproj",
         "projectName": "ComputerShareCodingChallenge",
-        "projectPath": "C:\\Users\\Eneko\\Source\\Repos\\Enekoiza\\ComputerShareChallenge\\ComputerShareCodingChallenge\\ComputerShareCodingChallenge.csproj",
+        "projectPath": "C:\\Users\\Eneko\\source\\repos\\Enekoiza\\ComputerShareChallenge\\ComputerShareCodingChallenge\\ComputerShareCodingChallenge.csproj",
         "packagesPath": "C:\\Users\\Eneko\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Eneko\\Source\\Repos\\Enekoiza\\ComputerShareChallenge\\ComputerShareCodingChallenge\\obj\\",
+        "outputPath": "C:\\Users\\Eneko\\source\\repos\\Enekoiza\\ComputerShareChallenge\\ComputerShareCodingChallenge\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

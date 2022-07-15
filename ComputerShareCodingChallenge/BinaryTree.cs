@@ -19,22 +19,28 @@ namespace ComputerShareCodingChallenge
         }
 
 
+        //Given a filepath holding the data of each letter and each conversion
 		public void createTree(string filePath)
         {
 
-
-
-            Node temp = new Node();
+            
+            //Current will be used as a node to move through the creating tree
             Node current = new Node();
 
-            string line = "";
+            string line = String.Empty;
 
+            //Create a stream reader and then read line by line until an empty line is found which means EOF
             using (var reader = new System.IO.StreamReader(filePath))
             {
                 while ((line = reader.ReadLine()) != null)
                 {
+                    //Separate both the character and its code
                     List<string> dictionary = line.Split(" ").ToList<string>();
+                    
+                    //Point the current to the root of the tree before trasversing
                     current = Root;
+
+                    //Find the char position in the tree an assign the value to the corresponding node
                     foreach (char sign in dictionary[1])
                     {
                         if(sign == '.')
@@ -63,28 +69,40 @@ namespace ComputerShareCodingChallenge
             }
         }
 
+
         public string decode(Node rootNode, string codedMessage)
         {
             string result = string.Empty;
 
             Node temp = new Node();
 
+            char[] delimeters = { ' ', '/' };
 
-            List<string> morsePattern = codedMessage.Split(" ").ToList<string>();
 
-            foreach (string letter in morsePattern)
+            List<string> wordPattern = codedMessage.Split("/").ToList<string>();
+
+
+
+            foreach (var word in wordPattern)
             {
-                temp = rootNode;
+                List<string> letterPattern = word.Split(" ").ToList<string>();
 
-                foreach (char sign in letter)
+                foreach (string letter in letterPattern)
                 {
-                    if (sign == '.') temp = temp.LeftNode;
-                    if (sign == '-') temp = temp.RightNode;
+
+                    temp = rootNode;
+
+                    foreach (char sign in letter)
+                    {
+                        if (sign == '.') temp = temp.LeftNode;
+                        if (sign == '-') temp = temp.RightNode;
+                    }
+                    result = result + temp.NodeValue;
                 }
-                result = result + temp.NodeValue;
+
+                result += " ";
             }
 
-            
 
             return result;
         }

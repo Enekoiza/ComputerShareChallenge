@@ -1,4 +1,4 @@
-﻿
+﻿//Application done by Eneko Izaguirre Martin
 
 
 //The application tries to emulate the MVC approach.
