@@ -14,6 +14,8 @@ namespace ComputerShareCodingChallenge
 			rightNode = null;
 		}
 
+
+		//Getters and Setters for the encapsulated data
 		public char NodeValue
         {
 			get { return nodeValue; }
