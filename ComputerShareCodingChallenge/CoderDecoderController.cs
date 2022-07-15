@@ -2,6 +2,7 @@
 
 namespace ComputerShareCodingChallenge
 {
+	//Controller to make the work around the MVC approach
 	public class CoderDecoderController
 	{
 		public CoderDecoderController()

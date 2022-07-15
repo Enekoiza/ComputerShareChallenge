@@ -3,6 +3,7 @@ using System.Linq;
 
 namespace ComputerShareCodingChallenge
 {
+    //Class to support the implementation of a binary tree
 	public class BinaryTree
 	{
 		private Node? root;
@@ -70,23 +71,27 @@ namespace ComputerShareCodingChallenge
         }
 
 
+        //Decode the given message
         public string decode(Node rootNode, string codedMessage)
         {
+
+
             string result = string.Empty;
 
             Node temp = new Node();
 
-            char[] delimeters = { ' ', '/' };
 
-
+            //Separate the coded message into elements of a list using the / delimeter
             List<string> wordPattern = codedMessage.Split("/").ToList<string>();
 
 
-
+            //Iterate through the generated words
             foreach (var word in wordPattern)
             {
+                //Separate the elements in the list by a " " delimeter which represents the word boundaries.
                 List<string> letterPattern = word.Split(" ").ToList<string>();
 
+                //Iterate through the generated characters
                 foreach (string letter in letterPattern)
                 {
 
@@ -100,31 +105,44 @@ namespace ComputerShareCodingChallenge
                     result = result + temp.NodeValue;
                 }
 
-                result += " ";
+                //Add the space representing a new word.
+                if(word != wordPattern.Last()) result += " ";
             }
 
 
             return result;
         }
 
+
+        //Encode the given message
         public string encode(Node rootNode, string codedMessage)
         {
             List<string> result = new List<string>();
 
             string finalEncodedMessage = string.Empty;
 
+
+            //Iterate through the given message with the value and the index as letter parameters
             foreach (var letter in codedMessage.Select((value, index) => new {value, index}))
             {
                 result.Clear();
+
+                //If the character is a " " place a "/" to represent the word delimeter
                 if (letter.value == ' ') 
                 {
                     finalEncodedMessage += "/";
                     continue;
                 }
+
+                //Between every character but not the first of the string or the first of each word place a " " as character boundary
                 if (letter.index != 0 && !finalEncodedMessage.EndsWith("/")) finalEncodedMessage += " ";
                 
+                //Trasverse the tree inserting into result the encoded character passed through letter.value
                 trasverseTree(rootNode, result, letter.value);
+                //Unify the items in the list as a string
                 string encodedLetter = string.Join("", result);
+
+                //Keep adding the values to the final message
                 finalEncodedMessage += encodedLetter;
             }
 
@@ -132,12 +150,17 @@ namespace ComputerShareCodingChallenge
             return finalEncodedMessage;
         }
         
+
+        //Function to recursivelly access all the nodes until one is found with the desired character
         public bool trasverseTree(Node rootNode, List<string> finalMorseString, char letter)
         {
+            //If this is the end of the branch
             if (rootNode == null) return false;
+            //If the desired node is found
             else if (rootNode.NodeValue == letter) return true;
             else
             {
+                //Traverse to the right or left branch of the tree
                 if (trasverseTree(rootNode.LeftNode, finalMorseString, letter) == true)
                 {
                     finalMorseString.Insert(0, ".");

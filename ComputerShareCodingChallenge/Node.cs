@@ -2,6 +2,7 @@
 
 namespace ComputerShareCodingChallenge
 {
+	//Class to support the implementation of the nodes inside the binary tree
 	public class Node
 	{
 		private char nodeValue;
