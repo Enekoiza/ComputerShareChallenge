@@ -18,7 +18,13 @@ namespace ComputerShareCodingChallenge
     {
         static void Main(string[] args)
         {
-            CoderDecoderController example = new CoderDecoderController();
+            CoderDecoderController challenge = new CoderDecoderController();
+
+            var command = challenge.AskForCommand();
+
+            var tree = challenge.GenerateTree();
+
+            challenge.ProcessCommand(command, tree);
         }
     }
 }

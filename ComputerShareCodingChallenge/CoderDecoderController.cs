@@ -7,53 +7,56 @@ namespace ComputerShareCodingChallenge
 	{
 		public CoderDecoderController()
 		{
-			//Loop to ask the user the action to perform
-            while (true)
-            {
-				Console.WriteLine("Please choose to code by typing 'C' or decode by typing 'D'. 'E' for exiting the program.");
-                var input = Console.ReadLine().ToUpper();
-				if (input == "E")
-				{
-					Console.WriteLine("The program ended successfully.");
-					return;
-				}
+		}
+		public string AskForCommand()
+        {
+			Console.WriteLine("Please choose to code by typing 'C' or decode by typing 'D'.");
 
-				BinaryTree myTree = new BinaryTree();
+			var command = Console.ReadLine().ToUpper();
 
-				string pathToDictionaryFile = Directory.GetCurrentDirectory() + "/MorseDictionary.txt";
+			return command;
+		}
 
-				myTree.createTree(pathToDictionaryFile);
+		public BinaryTree GenerateTree()
+        {
+			BinaryTree myTree = new BinaryTree();
 
-				Node rootNode = new Node();
+			string pathToDictionaryFile = Directory.GetCurrentDirectory() + "/MorseDictionary.txt";
 
-				rootNode = myTree.Root;
+			myTree.createTree(pathToDictionaryFile);
 
-				string message = string.Empty;
-
-				if (input == "D")
-                {
-					Console.WriteLine("Enter a message to decode: ");
-
-					message = Console.ReadLine();
-
-					
-					Console.WriteLine($"The decoded message is: {myTree.decode(rootNode, message)}");
-
-				}
-				if(input == "C")
-                {
-					Console.WriteLine("Enter a message to decode: ");
-
-					message = Console.ReadLine();
-
-					Console.WriteLine($"The decoded message is: {myTree.encode(rootNode, message)}");
-
-				}
-
-
-			}
-
+			return myTree;
 
 		}
+
+
+		public void ProcessCommand(string command, BinaryTree tree)
+        {
+
+
+
+			string message = string.Empty;
+
+			if (command == "D")
+			{
+				Console.WriteLine("Enter a message to decode: ");
+
+				message = Console.ReadLine();
+
+				Console.WriteLine($"The decoded message is: {tree.decode(tree.Root, message.ToUpper())}");
+
+			}
+			if (command == "C")
+			{
+				Console.WriteLine("Enter a message to encode: ");
+
+				message = Console.ReadLine();
+
+				Console.WriteLine($"The decoded message is: {tree.encode(tree.Root, message.ToUpper())}");
+
+			}
+		}
+
+
 	}
 }
