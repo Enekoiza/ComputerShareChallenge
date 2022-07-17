@@ -5,18 +5,16 @@ namespace ComputerShareCodingChallenge
 	//Controller to make the work around the MVC approach
 	public class CoderDecoderController
 	{
-		public CoderDecoderController()
-		{
-		}
+		//Controller action to ask and receive the command
 		public string AskForCommand()
-        {
+        	{
 			Console.WriteLine("Please choose to code by typing 'C' or decode by typing 'D'.");
 
 			var command = Console.ReadLine().ToUpper();
 
 			return command;
 		}
-
+		//Controller action to generate the tree
 		public BinaryTree GenerateTree()
         {
 			BinaryTree myTree = new BinaryTree();
@@ -29,7 +27,7 @@ namespace ComputerShareCodingChallenge
 
 		}
 
-
+		//Controller action to process the command with a tree passed as parameter
 		public void ProcessCommand(string command, BinaryTree tree)
         {
 
