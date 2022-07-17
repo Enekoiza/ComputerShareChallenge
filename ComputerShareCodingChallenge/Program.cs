@@ -18,6 +18,7 @@ namespace ComputerShareCodingChallenge
     {
         static void Main(string[] args)
         {
+            //Create an example of the controller and run the different actions
             CoderDecoderController challenge = new CoderDecoderController();
 
             var command = challenge.AskForCommand();
